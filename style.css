@@ -1,0 +1,145 @@
+/* 
+Theme Name: theme2
+Version:1.0.0
+author: Saiful
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./images/bg.gif) center;
+}
+.con{
+    width: 1020px;
+    margin: 0 auto;
+}
+/* header start  */
+.topbar{
+    height: 30px;
+    background: #9E5BBA;
+    color: white;
+    line-height: 30px;
+}
+.right P{
+    display: inline;
+    border-right:1px solid #dedede ;
+    padding: 0 10px;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+/* logo  */
+.logo{
+    height: 100px;
+}
+.logoimg{
+    /* line-height: 100; */
+    padding: 7px;
+}
+.search form{
+    margin-top: 37px;
+}
+.social{
+   
+}
+form input{
+    width: 60%;
+}
+form button{
+    margin: 0 10px;
+}
+.sleft{
+    margin-top: 37px;
+    padding-right: 10px;
+}
+.sleft img{
+    border-right: 1px solid #dedede;
+    padding: 0 10px;
+}
+.sright{
+    margin-top: 37px;
+}
+/* header end  */
+/* banner start  */
+.banner img{
+    border: 1px solid red;
+    padding: 10px;
+}
+/* banner end  */
+/* slider  */
+.slider{
+    padding-top: 12px;
+}
+/* tabbar  */
+.tabbar{
+    padding-top: 12px;
+}
+.mobile-seba{
+    padding: 10px;
+}
+/* uddog */
+.uddog{
+    width: 60%;
+}
+.uddog h6{
+    color: #9E5BBA;
+    padding: 10px;
+}
+.uddog li{
+    list-style: none;
+    border-bottom: 1px solid green;
+    font-size: 13px;
+}
+.uddog ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+form select{
+    width: 70%;
+    padding: 4px;
+}
+/* footr  */
+.fmenu{}
+.fmenu ul{}
+.fmenu ul li{
+    border-right: 1px solid #685656;
+}
+.fmenu ul li a{}
+.fmenu p{
+    padding: 15px;
+    font-size: 12px;
+}
+.fright img{
+    margin-bottom: 33px;
+}
+.fright p{
+    font-size: 12px;
+    padding-top: 10px;
+}
+.vdo2{
+    padding: 13px;
+}
+
+/* wordpress  */
+.menu_top li{
+    padding: 0 20px ;
+
+}
+.menu_top  li a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.simage{
+    margin: 15px;
+}
