@@ -7,6 +7,7 @@ wp_enqueue_script('script-name' , get_template_directory_uri() . './bootstrap.bu
 
 add_theme_support('title-tag');
 add_theme_support('custom-logo');
+add_theme_support('post-thumbnails');
 
 // menu 
 register_nav_menus([
@@ -48,22 +49,5 @@ register_sidebar([
     'after_widget'=>'</div>'
 ]);
 // slider 
-register_sidebar([
-    'name' => 'Slider image One',
-    'id'=> 'slider',
-    'before_widget'=>'<div class="slider">',
-    'after_widget'=>'</div>'
-]);
-register_sidebar([
-    'name' => 'Slider image two',
-    'id'=> 'slider2',
-    'before_widget'=>'<div class="slider">',
-    'after_widget'=>'</div>'
-]);
-register_sidebar([
-    'name' => 'Slider image three',
-    'id'=> 'slider3',
-    'before_widget'=>'<div class="slider">',
-    'after_widget'=>'</div>'
-]);
+
 ?>
