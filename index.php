@@ -20,6 +20,7 @@
                 <a href="">English</a>
             </div>
         </div>
+        <marquee behavior="" direction="" class="marquee"><?php dynamic_sidebar('marquee'); ?></marquee>
         <!-- header  -->
         <div class="logo row">
             <div class="logoimg col-lg-5">
@@ -101,14 +102,17 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="<?= get_template_directory_uri()?>./images/slider/Banner-1.jpg" class="d-block w-100" alt="...">
+                                <?php dynamic_sidebar('slider') ?>
+                                <!-- <img src="<?= get_template_directory_uri()?>./images/slider/Banner-1.jpg" class="d-block w-100" alt="..."> -->
                               </div>
 
                               <div class="carousel-item">
-                                <img src="<?= get_template_directory_uri()?>./images/slider/banner-renew-your-passport.png" class="d-block w-100" alt="...">
+                              <?php dynamic_sidebar('slider2') ?>
+                                <!-- <img src="<?= get_template_directory_uri()?>./images/slider/banner-renew-your-passport.png" class="d-block w-100" alt="..."> -->
                               </div>
                               <div class="carousel-item">
-                                <img src="<?= get_template_directory_uri()?>./images/slider/myGov Static2(1) (1).jpg" class="d-block w-100" alt="...">
+                              <?php dynamic_sidebar('slider3') ?>
+                                <!-- <img src="<?= get_template_directory_uri()?>./images/slider/myGov Static2(1) (1).jpg" class="d-block w-100" alt="..."> -->
                               </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -172,7 +176,7 @@
                             <div class="uddog">
                                 <h6>উদ্যোগ</h6>
                                 <ul>
-                                    <li><a href=""><?php dynamic_sidebar('listt'); ?></a>
+                                    <li><a href=""><?php dynamic_sidebar('listt'); ?></a></li>
                                     <!-- <li><a href="">বাংলাদেশ সরকারের সপ্তম পঞ্চবার্ষিক পরিকল্পনা (২০১৬-২০২০)</a>
                                         <p>(১৩-০৬-২০১৬)</p></li>
                                     <li><a href="">বাংলাদেশ সরকারের সপ্তম পঞ্চবার্ষিক পরিকল্পনা (২০১৬-২০২০)</a></li>
