@@ -40,4 +40,30 @@ register_sidebar([
     'before_widget'=>'',
     'after_widget'=>''
 ]);
+// marquee 
+register_sidebar([
+    'name' => 'Marquee',
+    'id'=> 'marquee',
+    'before_widget'=>'<div class="marquee">',
+    'after_widget'=>'</div>'
+]);
+// slider 
+register_sidebar([
+    'name' => 'Slider image One',
+    'id'=> 'slider',
+    'before_widget'=>'<div class="slider">',
+    'after_widget'=>'</div>'
+]);
+register_sidebar([
+    'name' => 'Slider image two',
+    'id'=> 'slider2',
+    'before_widget'=>'<div class="slider">',
+    'after_widget'=>'</div>'
+]);
+register_sidebar([
+    'name' => 'Slider image three',
+    'id'=> 'slider3',
+    'before_widget'=>'<div class="slider">',
+    'after_widget'=>'</div>'
+]);
 ?>
