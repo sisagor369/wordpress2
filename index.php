@@ -20,7 +20,7 @@
                 <a href="">English</a>
             </div>
         </div>
-        <marquee behavior="" direction="" class="marquee"><?php dynamic_sidebar('marquee'); ?></marquee>
+       
         <!-- header  -->
         <div class="logo row">
             <div class="logoimg col-lg-5">
@@ -87,6 +87,7 @@
                     </div>
                 </div>
                 </nav>
+                <marquee behavior="" direction="" class="marquee"><?php dynamic_sidebar('marquee'); ?></marquee>
         </div>
     </header>
     <div class="con">
@@ -100,20 +101,24 @@
                     <!-- slider -->
                     <div class="slider">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <?php 
+                            $qry = new WP_Query([
+                                'post_type'=>'post',
+                                'category_name'=>'Slider',
+                            ])
+                            ?>
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <?php dynamic_sidebar('slider') ?>
+                                <?php 
+                                $x=0;
+                                while($qry->have_posts()){$qry->the_post(); 
+                                    $x++;
+                                    ?>
+
+                              <div class="carousel-item <?= ($x==1) ? 'active' : '' ?> ss">
+                                <?php the_post_thumbnail();?>
                                 <!-- <img src="<?= get_template_directory_uri()?>./images/slider/Banner-1.jpg" class="d-block w-100" alt="..."> -->
                               </div>
-
-                              <div class="carousel-item">
-                              <?php dynamic_sidebar('slider2') ?>
-                                <!-- <img src="<?= get_template_directory_uri()?>./images/slider/banner-renew-your-passport.png" class="d-block w-100" alt="..."> -->
-                              </div>
-                              <div class="carousel-item">
-                              <?php dynamic_sidebar('slider3') ?>
-                                <!-- <img src="<?= get_template_directory_uri()?>./images/slider/myGov Static2(1) (1).jpg" class="d-block w-100" alt="..."> -->
-                              </div>
+                              <?php }?>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
