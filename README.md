@@ -30,3 +30,5 @@ slider part-->>
 have_post();
 the_post();
 the_thumbnail();
+the_content();
+the_title();
