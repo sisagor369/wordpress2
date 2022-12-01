@@ -24,3 +24,9 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo' );
 
 functions.php end --->>> 
+
+
+slider part-->>
+have_post();
+the_post();
+the_thumbnail();
